@@ -1,0 +1,17 @@
+
+1. Install Homestead - (https://laravel.com/docs/7.x/homestead#installation-and-setup)
+    - Make sure to configure Homestead.yaml appropriately (public keys, linked directories, etc.)
+    - Add local url to hosts file
+
+2. Install Laravel 7 inside the VM - (https://laravel.com/docs/7.x/installation#installation)
+    - check .env file for database configurations
+    - run the following commands as well
+        - composer install
+        - php artisan migrate
+        - php artisan storage link 
+
+3. From your host machine, run npm inside the directory
+    - npm install
+    - npm run watch
+
+4. Access app through mapped url from Homestead.yaml
